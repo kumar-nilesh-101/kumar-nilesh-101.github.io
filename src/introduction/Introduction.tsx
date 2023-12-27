@@ -1,5 +1,6 @@
 import React from 'react';
 import './Introduction.css';
+import { Technologies } from '../technologies/technologies';
 
 export function Introduction() {
     return (
@@ -20,6 +21,9 @@ export function Introduction() {
                         These typical days have accumulated to <span className='text-warning'>4 years</span>.
                     </span>
                 </article>
+            </section>
+            <section className="position-relative vh-100 p-xxl-5">
+                <Technologies></Technologies>
             </section>
         </>
     );
