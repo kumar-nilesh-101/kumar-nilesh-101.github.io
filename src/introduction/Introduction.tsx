@@ -23,6 +23,9 @@ export function Introduction() {
                 </article>
             </section>
             <section className="position-relative vh-100 p-xxl-5">
+                <h3 className='mb-5'>Besides my routine I get to fiddle around with several popular libraries and frameworks, here are the ones I'm confident about
+                    <span className='text-warning'>...</span>
+                </h3>
                 <Technologies></Technologies>
             </section>
         </>
