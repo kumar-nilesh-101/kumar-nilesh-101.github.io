@@ -2,15 +2,19 @@
     font-size: 4rem;
 }
 
-.social {
-    margin-top: 50px;
+.section-gap {
+    margin-bottom: 20rem;
 }
 
+.social {}
+
 .social .hi {
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .social .icon {
+    text-align: end;
+    font-size: 24px;
     padding: 20px;
     cursor: pointer;
 }

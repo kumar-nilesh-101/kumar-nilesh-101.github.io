@@ -12,40 +12,41 @@ export function Introduction() {
             <section className='p-xxl-5 vh-100 position-relative'>
                 <div className='position-absolute top-50'>
                     <h1 className='greeting'>Hi, I'm Nilesh;</h1>
-                    <h3 className='text-warning'>professional fullstack developer.</h3>
+                    {/* <h3 className='text-warning'>professional fullstack developer.</h3> */}
                     <div className='text-warning social'>
-                        <h4>
-                            <span className='d-inline-block fs-1 hi'>
+                        <div>
+                            <span className='d-inline-block fs-3 hi'>
                                 Say hi
                             </span>
-                            <a target="_blank" href='mailto:nilesh22.a67@gmail.com' className='d-inline-block mx-2 my-5 icon'>
+                            <a target="_blank" href='mailto:nilesh22.a67@gmail.com' className='d-inline-block m-2 icon'>
                                 <FontAwesomeIcon icon={faMessage} />
                             </a>
-                            <a target="_blank" href='https://linkedin.com/in/nilesh-kumar-developer' className='d-inline-block mx-2 my-5 icon'>
+                            <a target="_blank" href='https://linkedin.com/in/nilesh-kumar-developer' className='d-inline-block m-2 icon'>
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
-                            <a target="_blank" href='https://github.com/kumar-nilesh-101' className='d-inline-block mx-2 my-5 icon'>
+                            <a target="_blank" href='https://github.com/kumar-nilesh-101' className='d-inline-block m-2 icon'>
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                            <a target="_blank" href='https://stackoverflow.com/users/9391556/nilesh-kumar' className='d-inline-block mx-2 my-5 icon'>
+                            <a target="_blank" href='https://stackoverflow.com/users/9391556/nilesh-kumar' className='d-inline-block m-2 icon'>
                                 <FontAwesomeIcon icon={faStackOverflow} />
                             </a>
-                        </h4>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section className='position-relative vh-100'>
-                <article className='p-xxl-5 fs-3 position-absolute top-50 translate-middle-y'>
+            <section className='position-relative section-gap'>
+                <article className='p-5 mb-5 fs-3'>
                     <span className='d-inline-block my-4'>
-                        A typical workday involves using <span className='text-warning'>NodeJS</span> with <span className='text-warning'>Typescript</span>, <span className='text-warning'>Angular 8</span>, <span className='text-warning'>MongoDB</span> and some service on <span className='text-warning'>AWS</span> lends a hand.
+                        My typical workday involves using <span className='text-warning'>NodeJS</span> with <span className='text-warning'>Typescript</span>, <span className='text-warning'>Angular 8</span>, <span className='text-warning'>MongoDB</span> and some service on <span className='text-warning'>AWS</span> lends a hand.
                     </span>
                     <br />
                     <span className='d-d-inline-block'>
                         These typical days have accumulated to <span className='text-warning'>4 years</span>.
                     </span>
                 </article>
+                <Timeline />
             </section>
-            <section className="position-relative p-xxl-5 d-flex flex-column">
+            <section className="position-relative p-5 d-flex flex-column">
                 <h3 className='mb-5'>
                     Besides my routine I get to fiddle around with several popular libraries and frameworks, here are the ones I'm confident about
                     <span className='text-warning'>...</span>
@@ -53,12 +54,6 @@ export function Introduction() {
                 <div className='h-100 w-100 d-flex align-items-center justify-content-around flex-grow-1'>
                     <Technologies></Technologies>
                 </div>
-            </section>
-            <section className="postion-relative min-vh-100 p-xxl-5">
-                <h3 className="mb-5">
-                    What I have done so far
-                </h3>
-                <Timeline />
             </section>
         </>
     );
