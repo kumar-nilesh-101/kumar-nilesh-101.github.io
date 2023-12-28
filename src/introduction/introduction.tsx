@@ -2,6 +2,9 @@ import React from 'react';
 import './introduction.css';
 import { Technologies } from '../tech-list/technologies';
 import { Timeline } from '../timeline/timeline';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMessage } from '@fortawesome/free-regular-svg-icons';
+import { faLinkedinIn, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 
 export function Introduction() {
     return (
@@ -10,6 +13,25 @@ export function Introduction() {
                 <div className='position-absolute top-50'>
                     <h1 className='greeting'>Hi, I'm Nilesh;</h1>
                     <h3 className='text-warning'>professional fullstack developer.</h3>
+                    <div className='text-warning social'>
+                        <h4>
+                            <span className='d-inline-block fs-1 hi'>
+                                Say hi
+                            </span>
+                            <a target="_blank" href='mailto:nilesh22.a67@gmail.com' className='d-inline-block mx-2 my-5 icon'>
+                                <FontAwesomeIcon icon={faMessage} />
+                            </a>
+                            <a target="_blank" href='https://linkedin.com/in/nilesh-kumar-developer' className='d-inline-block mx-2 my-5 icon'>
+                                <FontAwesomeIcon icon={faLinkedinIn} />
+                            </a>
+                            <a target="_blank" href='https://github.com/kumar-nilesh-101' className='d-inline-block mx-2 my-5 icon'>
+                                <FontAwesomeIcon icon={faGithub} />
+                            </a>
+                            <a target="_blank" href='https://stackoverflow.com/users/9391556/nilesh-kumar' className='d-inline-block mx-2 my-5 icon'>
+                                <FontAwesomeIcon icon={faStackOverflow} />
+                            </a>
+                        </h4>
+                    </div>
                 </div>
             </section>
             <section className='position-relative vh-100'>
