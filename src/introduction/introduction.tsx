@@ -23,7 +23,7 @@ export function Introduction() {
                     </span>
                 </article>
             </section>
-            <section className="position-relative vh-100 p-xxl-5">
+            <section className="position-relative min-vh-100 p-xxl-5">
                 <h3 className='mb-5'>Besides my routine I get to fiddle around with several popular libraries and frameworks, here are the ones I'm confident about
                     <span className='text-warning'>...</span>
                 </h3>
