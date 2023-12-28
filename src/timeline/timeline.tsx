@@ -1,22 +1,13 @@
 import React from "react"
 import { Chrono } from "react-chrono";
-export function Timeline() {
-    const items = [
-        {
-            title: "February, 2020",
-        },
-        {
-            title: "December, 2020",
-        },
-        {
-            title: "Novemeber, 2022",
-        }
-    ];
+import { Experience } from "./experience-list";
+import './timeline.css';
 
+export function Timeline() {
     return (
-        <div className="min-vh-100 w-100">
+        <div className="d-flex align-items-center justify-content-start">
             <Chrono
-                items={items}
+                items={Experience.map(e => ({ title: e.timePoint }))}
                 classNames={{
                     active: 'my-class'
                 }}
@@ -25,46 +16,46 @@ export function Timeline() {
                 theme={{
                     primary: '#ffc107',
                     secondary: '#ffc107',
-                    cardBgColor: 'black',
+                    cardBgColor: 'transparent',
                     titleColor: 'white',
                     titleColorActive: 'ffc107',
                     titleHighlightActive: 'transparent',
                     iconBackgroundColor: 'black'
                 }}
-                scrollable={{ scrollbar: false }}
-                enableOutline
-                disableClickOnCircle
-                timelinePointDimension={50}
+                timelinePointDimension={75}
+                lineWidth="2"
             >
                 <div className="chrono-icons">
-                    <img src="/assets/icons/biz2credit.svg" alt="TTN" />
-                    <img src="/assets/icons/ttn.svg" alt="TTN" />
-                    <img src="/assets/icons/ttn.svg" alt="TTN" />
+                    {
+                        Experience.map(e => {
+                            return (
+                                <img src={e.org.icon} alt={e.org.name} />
+                            );
+                        })
+                    }
                 </div>
-                <div className="card bg-black text-white">
-                    <h4 className="card-header">
-                        Software Engineer Trainee, To The New Private Limited
-                    </h4>
-                    <div className="card-body p-4">
-                        <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa recusandae fugit tempora, dignissimos molestias voluptatem distinctio alias impedit culpa magni eligendi aspernatur ab, sint expedita numquam aperiam neque harum dolore eaque ipsum id temporibus. Quis at magni modi id a dolores ad, quaerat architecto dolorem soluta, illum sequi minima.</p>
-                    </div>
-                </div>
-                <div className="card bg-black text-white">
-                    <h4 className="card-header">
-                        Software Engineer, To The New Private Limited
-                    </h4>
-                    <div className="card-body p-4">
-                        <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa recusandae fugit tempora, dignissimos molestias voluptatem distinctio alias impedit culpa magni eligendi aspernatur ab, sint expedita numquam aperiam neque harum dolore eaque ipsum id temporibus. Quis at magni modi id a dolores ad, quaerat architecto dolorem soluta, illum sequi minima.</p>
-                    </div>
-                </div>
-                <div className="card bg-black text-white">
-                    <h4 className="card-header">
-                        Biz2Credit Infoservices Private Limited
-                    </h4>
-                    <div className="card-body p-4">
-                        <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa recusandae fugit tempora, dignissimos molestias voluptatem distinctio alias impedit culpa magni eligendi aspernatur ab, sint expedita numquam aperiam neque harum dolore eaque ipsum id temporibus. Quis at magni modi id a dolores ad, quaerat architecto dolorem soluta, illum sequi minima.</p>
-                    </div>
-                </div>
+                {
+                    Experience.map(e => {
+                        return (
+                            <div className="card bg-transparent mt-5 text-white">
+                                <h4 className="card-header pl-0 mb-4">
+                                    { (e.role && e.org.name) ? `${e.role}, ${e.org.name}` : '' }
+                                </h4>
+                                <div className={ "card-body" + ( e.description.length ? "card-border" : "") + "p-4" }>
+                                    <div className="card-text">
+                                        {
+                                            e.description.map(d => {
+                                                return (
+                                                    <p>{d}</p>
+                                                );
+                                            })
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })
+                }
             </Chrono>
         </div>
     )
