@@ -1,6 +1,7 @@
 import React from 'react';
-import './Introduction.css';
+import './introduction.css';
 import { Technologies } from '../technologies/technologies';
+import { Timeline } from '../timeline/timeline';
 
 export function Introduction() {
     return (
@@ -28,6 +29,7 @@ export function Introduction() {
                 </h3>
                 <Technologies></Technologies>
             </section>
+            <Timeline />
         </>
     );
 }
