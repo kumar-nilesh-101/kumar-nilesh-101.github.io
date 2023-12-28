@@ -1,6 +1,6 @@
 import React from 'react';
 import './introduction.css';
-import { Technologies } from '../technologies/technologies';
+import { Technologies } from '../tech-list/technologies';
 import { Timeline } from '../timeline/timeline';
 
 export function Introduction() {
@@ -23,12 +23,14 @@ export function Introduction() {
                     </span>
                 </article>
             </section>
-            <section className="position-relative min-vh-100 p-xxl-5">
+            <section className="position-relative p-xxl-5 d-flex flex-column">
                 <h3 className='mb-5'>
                     Besides my routine I get to fiddle around with several popular libraries and frameworks, here are the ones I'm confident about
                     <span className='text-warning'>...</span>
                 </h3>
-                <Technologies></Technologies>
+                <div className='h-100 w-100 d-flex align-items-center justify-content-around flex-grow-1'>
+                    <Technologies></Technologies>
+                </div>
             </section>
             <section className="postion-relative min-vh-100 p-xxl-5">
                 <h3 className="mb-5">
