@@ -37,7 +37,7 @@ export function Introduction() {
             <section className='position-relative section-gap'>
                 <article className='p-5 mb-5 fs-3'>
                     <span className='d-inline-block my-4'>
-                        My typical workday involves using <span className='text-warning'>NodeJS</span> with <span className='text-warning'>Typescript</span>, <span className='text-warning'>Angular 8</span>, <span className='text-warning'>MongoDB</span> and some service on <span className='text-warning'>AWS</span> lends a hand.
+                        My typical workday involves using <span className='text-warning'> NodeJS </span> with <span className='text-warning'>Typescript</span>, <span className='text-warning'>Angular 8</span>, <span className='text-warning'>MongoDB</span> and some service on <span className='text-warning'>AWS</span> lends a hand.
                     </span>
                     <br />
                     <span className='d-d-inline-block'>
