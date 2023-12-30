@@ -1,7 +1,7 @@
 export const technologies = [
     {
         name: 'NodeJS',
-        thumbUrl: '/assets/technologies/nodejs.svg'
+        thumbUrl: '/assets/technologies/nodejs.png'
     },
     {
         name: 'ExpressJs',

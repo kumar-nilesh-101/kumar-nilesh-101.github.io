@@ -15,7 +15,7 @@ export function Introduction() {
                 <div className='position-absolute top-50'>
                     <h1 className='greeting position-relative'>
                         Hi, I'm Nilesh;
-                        <a className='d-inline-block position-absolute text-decoration-none download' href={pdf} target="_blank"> <FontAwesomeIcon icon={faArrowDown} /> </a>
+                        <a className='d-inline-block text-warning fs-2 position-absolute text-decoration-none download' href={pdf} target="_blank"> <FontAwesomeIcon icon={faArrowDown} /> </a>
                     </h1>
                     <div className='text-warning social'>
                         <div>
@@ -50,14 +50,12 @@ export function Introduction() {
                 </article>
                 <Timeline />
             </section>
-            <section className="position-relative p-5 d-flex flex-column">
+            <section className="position-relative p-5">
                 <h3 className='mb-5'>
                     Besides my routine I get to fiddle around with several popular libraries and frameworks, here are the ones I'm confident about
                     <span className='text-warning'>...</span>
                 </h3>
-                <div className='h-100 w-100 d-flex align-items-center justify-content-around flex-grow-1'>
-                    <Technologies></Technologies>
-                </div>
+                <Technologies></Technologies>
             </section>
         </>
     );
