@@ -5,7 +5,7 @@ export const technologies = [
     },
     {
         name: 'ExpressJs',
-        thumbUrl: '/assets/technologies/express.png'
+        thumbUrl: '/assets/technologies/express.svg'
     },
     {
         name: 'NestJS',
@@ -21,7 +21,7 @@ export const technologies = [
     },
     {
         name: 'MongoDB',
-        thumbUrl: '/assets/technologies/mongodb.svg'
+        thumbUrl: '/assets/technologies/mongodb.png'
     },
     {
         name: 'MySQL',
