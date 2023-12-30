@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kumar-nilesh-101.github.io/kumar-nilesh-101.github.io",
+  "homepage": ".",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   }
 }

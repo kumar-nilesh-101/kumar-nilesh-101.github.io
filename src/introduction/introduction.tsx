@@ -18,16 +18,16 @@ export function Introduction() {
                             <span className='d-inline-block fs-3 hi'>
                                 Say hi
                             </span>
-                            <a target="_blank" href='mailto:nilesh22.a67@gmail.com' className='d-inline-block m-2 icon'>
+                            <a target="_blank" rel="noreferrer" href='mailto:nilesh22.a67@gmail.com' className='d-inline-block m-2 icon'>
                                 <FontAwesomeIcon icon={faMessage} />
                             </a>
-                            <a target="_blank" href='https://linkedin.com/in/nilesh-kumar-developer' className='d-inline-block m-2 icon'>
+                            <a target="_blank" rel="noreferrer" href='https://linkedin.com/in/nilesh-kumar-developer' className='d-inline-block m-2 icon'>
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
-                            <a target="_blank" href='https://github.com/kumar-nilesh-101' className='d-inline-block m-2 icon'>
+                            <a target="_blank" rel="noreferrer" href='https://github.com/kumar-nilesh-101' className='d-inline-block m-2 icon'>
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                            <a target="_blank" href='https://stackoverflow.com/users/9391556/nilesh-kumar' className='d-inline-block m-2 icon'>
+                            <a target="_blank" rel="noreferrer" href='https://stackoverflow.com/users/9391556/nilesh-kumar' className='d-inline-block m-2 icon'>
                                 <FontAwesomeIcon icon={faStackOverflow} />
                             </a>
                         </div>
