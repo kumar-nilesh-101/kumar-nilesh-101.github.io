@@ -5,14 +5,18 @@ import { Timeline } from '../timeline/timeline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMessage } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedinIn, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import pdf from '../resume.pdf';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export function Introduction() {
     return (
         <>
             <section className='p-xxl-5 vh-100 position-relative'>
                 <div className='position-absolute top-50'>
-                    <h1 className='greeting'>Hi, I'm Nilesh;</h1>
-                    {/* <h3 className='text-warning'>professional fullstack developer.</h3> */}
+                    <h1 className='greeting position-relative'>
+                        Hi, I'm Nilesh;
+                        <a className='d-inline-block position-absolute text-decoration-none download' href={pdf} target="_blank"> <FontAwesomeIcon icon={faArrowDown} /> </a>
+                    </h1>
                     <div className='text-warning social'>
                         <div>
                             <span className='d-inline-block fs-3 hi'>
