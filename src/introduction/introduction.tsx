@@ -3,7 +3,7 @@ import './introduction.css';
 import { Technologies } from '../tech-list/technologies';
 import { Timeline } from '../timeline/timeline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMessage } from '@fortawesome/free-regular-svg-icons';
+import { faFile, faMessage } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedinIn, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 import pdf from '../resume.pdf';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +15,15 @@ export function Introduction() {
                 <div className='position-absolute top-50'>
                     <h1 className='greeting position-relative'>
                         Hi, I'm Nilesh;
-                        <a className='d-inline-block text-warning fs-2 position-absolute text-decoration-none download' href={pdf} target="_blank"> <FontAwesomeIcon icon={faArrowDown} /> </a>
+                        <span className='d-inline-block text-warning fs-1 resume-icon'>
+                            <FontAwesomeIcon icon={faFile} />
+                        </span>
+                        <a
+                            className='d-inline-block text-warning fs-3 position-absolute text-decoration-none download'
+                            href={pdf}
+                            target="_blank">
+                                <FontAwesomeIcon icon={faArrowDown} />
+                        </a>
                     </h1>
                     <div className='text-warning social'>
                         <div>

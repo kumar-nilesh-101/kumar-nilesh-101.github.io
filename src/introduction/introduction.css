@@ -17,10 +17,15 @@
     font-size: 24px;
     padding: 20px;
     cursor: pointer;
+    color: #fff;
 }
 
 .social .icon:hover {
     color: #ffc107;
+}
+
+.resume-icon {
+  margin-left: 40px;
 }
 
 .download {
