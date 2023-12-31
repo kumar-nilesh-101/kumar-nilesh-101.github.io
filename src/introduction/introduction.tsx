@@ -21,7 +21,9 @@ export function Introduction() {
                         <a
                             className='d-inline-block text-warning fs-3 position-absolute text-decoration-none download'
                             href={pdf}
-                            target="_blank">
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                                 <FontAwesomeIcon icon={faArrowDown} />
                         </a>
                     </h1>

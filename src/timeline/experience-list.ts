@@ -50,7 +50,7 @@ export const Experience = [
         role: 'Software Engineer Trainee',
         description: [
             'Learned professional web development in MongoDB, ExpressJs, Angular, and NodeJS stack.',
-            'I created a dashboard to track COVID-19 cases worldwide using data from provided public APIs.',
+            'I created an extensive website to track COVID-19, with a dashboard, an help page which provides nearby medical facilities details based on the user location. All of this data was fetched from public APIs available.',
             'Developed a basic social networking website, and translated requirements into concrete stories on JIRA with time estimates.',
         ]
     }

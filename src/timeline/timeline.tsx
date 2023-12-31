@@ -41,16 +41,18 @@ export function Timeline() {
                                 <h4 className="card-header pl-0 mb-4">
                                     { (e.role && e.org.name) ? `${e.role}, ${e.org.name}` : '' }
                                 </h4>
-                                <div className={ "card-body" + ( e.description.length ? "card-border" : "") + "p-4" }>
-                                    <div className="card-text">
+                                <div className={ "card-body" + ( e.description.length ? " card-border " : " ") + "p-4" }>
+                                    <ul className="card-text text-justify fs-5">
                                         {
                                             e.description.map(d => {
-                                                return (
-                                                    <p>{d}</p>
+                                                return (                                                    
+                                                    <li>
+                                                        {d}
+                                                    </li>
                                                 );
                                             })
                                         }
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         );
