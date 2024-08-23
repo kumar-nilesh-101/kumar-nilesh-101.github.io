@@ -9,6 +9,18 @@ export const Experience = [
         description: []
     },
     {
+        timePoint: 'February 2023',
+        org: {
+            icon: '/assets/icons/delivery_solutions.svg',
+            name: 'Delivery Solutions (United Parcel Service)'
+        },
+        role: 'Senior Software Engineer II',
+        description: [
+            "Achieved a 50% increase in message processing rate after redesigning notifications service for publishing webhooks at scale and eradicating heap memory-related issues.",
+            "Halved place order API response time which was breaching SLA due to a new feature by refactoring image upload since it took significant time.",
+        ],
+    },
+    {
         timePoint: 'November, 2022',
         org: {
             icon: '/assets/icons/biz2credit.svg',
@@ -16,10 +28,9 @@ export const Experience = [
         },
         role: 'Software Engineer',
         description: [
-            'The application automates and logs several workflows associated with loan recoveries. It uses the MongoDB, Express.JS, Angular 8 and NodeJS stack hosted on AWS.',
-            'Optimized reports thus reducing turnaround time of an average sized report (~50,000 rows) to around a minute from previous ETA of 8 - 10 minutes and extended data size limit of the reports by using streams, thus resolving a key complaint from the client.',
-            'Implemented a framework to simplify the development of new data reports which reduced the development time to one or two days from an average of five days with support for asynchronicity.',
-            'Contributed to the new design and implementation of data upload, using AWS Lambda to concurrently process batches of data. It pushed the limit to 5,00,000 records per user at once from 1,00,000 records.',
+            'Led end-to-end overhaul of the Collections product which resulted in < 10ms mean response time of APIs, reduced coupling and reduced development time by 30% on average for new features.',
+            'Spearheaded the development of a framework for Excel reports, which cut the effort to a quarter of the previously required efforts for developing an insights report.',
+            'Engineered data insights feature, it cut the client efforts by 80% for the same by using stream-based solutions and a multithreaded approach.',
         ]
     },
     {
@@ -30,15 +41,11 @@ export const Experience = [
         },
         role: 'Software Engineer',
         description: [
-            'Led a team of 4 developers to maintain the codebase and extend functionalities of NodeJS services and user interface of a tax automation and insights project for a BIG4 client.',
-            'Designed a microservice to handle large data exports with background processing to support up to 10 million records in Excel format.',
-            'Planned and led the development of support for additional file formats (PDF and CSV) for the aforementioned service.',
-            'Planned integration of RabbitMQ in all NodeJS services to prevent loss of requests in case of disruptions.',
-            'Implemented proof of concepts involving AWS OpenSearch and AWS ElastiCache which were later put in the pipeline to be integrated into the application.',
-            'For another UK based client I was solely responsible for moving a legacy javascript service to typescript with modern patterns and practices in a recruitment interview scheduling and automation application.',
-            'We planned and integrated the service with the serverless framework to seamlessly run the application as AWS Lambda.',
-            'Implemented an automated pipeline library to move AWS Lex chatbot configurations to higher environments without manual intervention in the same project.',
-            'Contributed to integration with AWS SNS to provide real-time push notifications to individual interviewers and panels.',
+            'Guided a team of 4 developers in enhancing and expanding NestJS and vanilla NodeJS services for a major tax automation and insights project for a BIG4 client, overseeing codebase maintenance and UI refinements.',
+            'Developed a microservice tailored for large-scale data exports within 2 minutes, enabling handling of up to 10 million records in Excel format, with extended support for PDF and CSV, markedly boosting scalability and versatility.',
+            'Reduced download time for an average Excel report of 500,000 rows to 10 seconds from closer to a minute by using RabbitMQ to buffer requests and parallel processing on threads.',
+            'Implemented a Typescript-based solution for a legacy JavaScript service for AWS Lex chatbots with modern patterns and practices for a better developer experience.',
+
         ]
     },
     {
